@@ -131,7 +131,7 @@ h6 {
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
 }
 
-#header #logo h1 {
+#header #logo h2 {
   font-size: 42px;
   margin: 0;
   padding: 0;
@@ -140,13 +140,13 @@ h6 {
   font-weight: 700;
 }
 
-#header #logo h1 a {
+#header #logo h2 a {
   color: #0c2e8a;
   line-height: 1;
   display: inline-block;
 }
 
-#header #logo h1 a span {
+#header #logo h2 a span {
   color: #50d8af;
 }
 
@@ -160,6 +160,7 @@ h6 {
 --------------------------------------------------------------*/
 
 #intro {
+  position: relative;
   width: 100%;
   height: 40vh;
   position: relative;
@@ -194,7 +195,7 @@ h6 {
   text-align: center;
 }
 
-#intro .intro-content h2 {
+#intro .intro-content h1 {
   color: #0c2e8a;
   margin-bottom: 30px;
   font-size: 64px;
@@ -264,6 +265,88 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   transition-property: opacity;
+}
+
+#intro .type {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#intro .type-item {
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #0c2e8a;
+}
+
+#intro .type-item a {
+  font-weight: bold;
+  color: #fff;
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(.99);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(.99);
+  }
+}
+
+#intro .type_1 {
+  position: absolute;
+  top: 100px;
+  left: 20%;
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+  animation: breathe 2s infinite;
+}
+
+#intro .type_2 {
+  position: absolute;
+  top: 50px;
+  right: 20%;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  animation: breathe 1.4s infinite;
+}
+
+#intro .type_2 a {
+  color:#0c2e8a;
+}
+
+#intro .type_3 a {
+  color:#0c2e8a;
+}
+
+#intro .type_3 {
+  position: absolute;
+  bottom: 40px;
+  right: 30%;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  animation: breathe 3s infinite;
+  background: #fcfffe;
+}
+
+#intro .product_img_1 {
+  background-image: url(../img/place/p50.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#intro .product_img_2 {
+  background-image: url(../img/product/product-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*--------------------------------------------------------------
@@ -556,7 +639,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 100%;
 }
 
-.product .content h2 {
+.product .content h1 {
   font-weight: bold;
   font-size: 40px;
   color: #0c2e8a;
@@ -691,6 +774,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 15px;
   font-size: 22px;
 }
+#oem .box h4 {
+  margin-left: 20px;
+}
 
 #services .box h4 a, #oem .box h4 a {
   color: #444;
@@ -701,6 +787,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-left: 100px;
   margin-bottom: 0;
   line-height: 24px;
+}
+
+#oem .box p {
+  margin-left: 20px;
 }
 
 #oem .box {
@@ -1191,7 +1281,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width: 767px) {
-  #intro .intro-content h2 {
+  #intro .intro-content h1 {
     font-size: 34px;
   }
 

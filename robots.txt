@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /cc/
+Sitemap:https://www.easybot.cc/sitemap.xml
